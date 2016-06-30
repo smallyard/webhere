@@ -1,3 +1,5 @@
+var fs = require("fs");
+var contentTypes = require("./contentTypes");
 var HTML_INDEX = require("./htmlIndex").html;
 var HTML_404 = require("./html404").html;
 

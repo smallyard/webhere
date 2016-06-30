@@ -1,8 +1,6 @@
 var http = require("http");
-var fs = require("fs");
 var router = require("./router");
 var render = require("./render");
-var contentTypes = require("./contentTypes");
 
 function start() {
     function onRequest(request, response) {
