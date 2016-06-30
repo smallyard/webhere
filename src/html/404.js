@@ -1,9 +1,1 @@
-exports.html = "<!doctype html>\
-    <html>\
-    <head>\
-    <meta charset='utf-8'>\
-    <title>webhere</title>\
-    </head>\
-    <body>\
-    <h1>404</h1>\
-    </body>";
+exports.html = '<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>404</title> <style> body {margin: 0; display: block; font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 13px; line-height: 1.4; color: #333; background-color: #fff; } .main{margin-left: 50px; margin-right: 50px; } </style> </head> <div> <div class="main"> <h1>404</h1> <p>I am from Mars.</p> </div> </div> </html>';
