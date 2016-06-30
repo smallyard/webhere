@@ -1,6 +1,6 @@
 {
   "name": "webhere",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Create a web server in the current directory.",
   "repository": {
     "type": "git",
