@@ -13,11 +13,13 @@
             color: #333;
             background-color: #fff;
         }
+
         a {
             color: #4078c0;
             text-decoration: none;
         }
-        pre{
+
+        pre {
             padding: 16px;
             overflow: auto;
             font-size: 85%;
@@ -25,12 +27,25 @@
             background-color: #f7f7f7;
             border-radius: 3px;
         }
-        code{
+
+        code {
             font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
         }
-        .main{
+
+        .main {
             margin-left: 50px;
             margin-right: 50px;
+        }
+
+        footer {
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        footer p {
+            text-align: center;
+            color: #b1aeae
         }
     </style>
 </head>
@@ -38,6 +53,7 @@
     <div class="main">
         <h1>webhere</h1>
         <p>Create a web server in the current directory. </p>
+
         <p>
             <a href="https://npmjs.org/package/webhere">
                 <img src="https://img.shields.io/npm/v/webhere.svg?style=flat">
@@ -47,19 +63,21 @@
             </a>
         </p>
         <hr>
+
         <h2>Install</h2>
-        <p>
         <pre><code>$ npm install webhere -g</code></pre>
-        </p>
+
         <h2>Usage</h2>
         <h4>run in cmd</h4>
-        <p>
         <pre><code>$ webhere</code></pre>
-        </p>
+
+
         <h4>log </h4>
-        <p>
         <pre><code>Server has started.</code></pre>
         <pre><code>Server address: http://127.0.0.1:9000</code></pre>
-        </p>
     </div>
+    <footer>
+        <p> Copyright <a href="https://github.com/smallyard">©smallyard</a> | Blog <a href="http://smallyard.cn">小院子</a></p>
+    </footer>
+</div>
 </html>
