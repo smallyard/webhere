@@ -1,6 +1,6 @@
 {
   "name": "webhere",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Create a web server in the current directory.",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "author": "liuhongqiang <liuhongqiang@live.cn>",
   "license": "MIT",
   "bin": {
-    "tianqi": "./bin/webhere"
+    "webhere": "./bin/webhere"
   },
   "keywords": [
     "webhere",
