@@ -1,7 +1,7 @@
 var fs = require("fs");
 var contentTypes = require("./contentTypes");
-var HTML_INDEX = require("./htmlIndex").html;
-var HTML_404 = require("./html404").html;
+var HTML_INDEX = require("./html/index").html;
+var HTML_404 = require("./html/404").html;
 
 function getResponseInfo(routeResult) {
     console.log("Result path: " + routeResult);
