@@ -16,8 +16,29 @@ $ npm install webhere -g
 ## Usage
 
 #### run in cmd
-```
+```shell
+#create a web server in the current directory with port 9000
 $ webhere
+```
+
+```shell
+#create a web server in the current directory with port 5000
+$ webhere -p 5000
+```
+
+```shell
+#create a web server in the /homoe directory with port 5000
+$ webhere -p 5000 -b /home
+```
+
+#### all options
+```
+  Usage: webhere [options]
+  Options:
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -p, --port <n>         port of web (default 9000)
+    -b, --basePath <path>  base path of web (default .)
 ```
 
 #### log
