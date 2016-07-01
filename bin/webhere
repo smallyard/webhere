@@ -1,5 +1,29 @@
 #!/usr/bin/env node
 
+var program = require("commander");
 var server = require("../src/server");
+var package = require("../package");
 
-server.start();
+var options = {
+    port: 9000,
+    basePath: "."
+};
+
+program
+    .version(package.version)
+    .usage("[options]")
+    .option("-p, --port <n>", "port of web (default 9000)")
+    .option("-b, --basePath <path>", "base path of web (default .)")
+    .parse(process.argv);
+
+if (program.port) {
+    options.port = program.port;
+}
+
+if (program.basePath) {
+    options.basePath = program.basePath;
+}
+
+console.log(JSON.stringify(options));
+
+server.start(options);

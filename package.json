@@ -16,6 +16,9 @@
     "server",
     "web server"
   ],
+  "dependencies": {
+    "commander": "2.9.0"
+  },
   "engines": {
     "node": ">= 0.10"
   },
