@@ -3,81 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>webhere</title>
-    <style>
-        body {
-            margin: 0;
-            display: block;
-            font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            font-size: 13px;
-            line-height: 1.4;
-            color: #333;
-            background-color: #fff;
-        }
+    <style> html, body, h1, footer, div {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
 
-        a {
-            color: #4078c0;
-            text-decoration: none;
-        }
+    html {
+        height: 100%;
+    }
 
-        pre {
-            padding: 16px;
-            overflow: auto;
-            font-size: 85%;
-            line-height: 1.45;
-            background-color: #f7f7f7;
-            border-radius: 3px;
-        }
+    body {
+        display: block;
+        font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 13px;
+        line-height: 1.4;
+        color: #333;
+        background-color: #fff;
+        height: 100%;
+    }
 
-        code {
-            font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        }
+    a {
+        color: #4078c0;
+        text-decoration: none;
+    }
 
-        .main {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
+    pre {
+        padding: 16px;
+        overflow: auto;
+        font-size: 85%;
+        line-height: 1.45;
+        background-color: #f7f7f7;
+        border-radius: 3px;
+    }
 
-        footer {
-            margin-top: 50px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
+    code {
+        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    }
 
-        footer p {
-            text-align: center;
-            color: #b1aeae
-        }
-    </style>
+    .main {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 30px;
+        margin-bottom: -50px;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    footer {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: -80px;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    footer p {
+        text-align: center;
+        color: #b1aeae
+    } </style>
 </head>
-<div>
-    <div class="main">
-        <h1>webhere</h1>
-        <p>Create a web server in the current directory. </p>
-
-        <p>
-            <a href="https://npmjs.org/package/webhere">
-                <img src="https://img.shields.io/npm/v/webhere.svg?style=flat">
-            </a>
-            <a href="https://travis-ci.org/smallyard/webhere">
-                <img src="https://travis-ci.org/smallyard/webhere.svg">
-            </a>
-        </p>
-        <hr>
-
-        <h2>Install</h2>
-        <pre><code>$ npm install webhere -g</code></pre>
-
-        <h2>Usage</h2>
-        <h4>run in cmd</h4>
-        <pre><code>$ webhere</code></pre>
-
-
-        <h4>log </h4>
-        <pre><code>Server has started.</code></pre>
-        <pre><code>Server address: http://127.0.0.1:9000</code></pre>
-    </div>
-    <footer>
-        <p> Copyright <a href="https://github.com/smallyard">©smallyard</a> | Blog <a href="http://smallyard.cn">小院子</a></p>
-    </footer>
+<body>
+<div class="main"><h1>webhere</h1>
+    <p>Create a web server in the current directory. </p>
+    <p><a href="https://npmjs.org/package/webhere"> <img src="https://img.shields.io/npm/v/webhere.svg?style=flat"> </a>
+        <a href="https://travis-ci.org/smallyard/webhere"> <img src="https://travis-ci.org/smallyard/webhere.svg"> </a>
+    </p>
+    <hr>
+    <h2>Install</h2>
+    <pre><code>$ npm install webhere -g</code></pre>
+    <h2>Usage</h2> <h4>run in cmd</h4>
+    <pre><code>$ webhere</code></pre>
+    <h4>log </h4>
+    <pre><code>Server has started.</code></pre>
+    <pre><code>Server address: http://127.0.0.1:9000</code></pre>
 </div>
+<footer><p> Copyright <a href="https://github.com/smallyard">©smallyard</a> | Blog <a href="http://smallyard.cn">小院子</a>
+</p></footer>
+</body>
 </html>
