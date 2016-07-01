@@ -1,14 +1,24 @@
 var fs = require("fs");
-function route(path) {
-    console.log("Origin path: " + path);
-    if (path == "/") {
-        return "htmlIndex";
+var path = require("path");
+function route(url) {
+    console.log("Origin path: " + url);
+    if (url == "/") {
+        return {
+            status: 200,
+            filePath: path.join(__dirname, "./html/index.html")
+        };
     } else {
-        path = "." + path;
-        if (fs.existsSync(path) && fs.statSync(path).isFile()) {
-            return path;
+        var filePath = "." + path.normalize(url);
+        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+            return {
+                status: 200,
+                filePath: filePath
+            };
         } else {
-            return "html404";
+            return {
+                status: 404,
+                filePath: path.join(__dirname, "./html/404.html")
+            };
         }
     }
 }

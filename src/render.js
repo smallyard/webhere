@@ -1,27 +1,12 @@
 var fs = require("fs");
 var contentTypes = require("./contentTypes");
-var HTML_INDEX = require("./html/index").html;
-var HTML_404 = require("./html/404").html;
 
 function getResponseInfo(routeResult) {
-    console.log("Result path: " + routeResult);
-
-    var status = 200;
-    var content = "";
-    var contentType = "text/html";
-    if (routeResult == "htmlIndex") {
-        content = HTML_INDEX;
-    } else if (routeResult == "html404") {
-        status = 404;
-        content = HTML_404;
-    } else {
-        content = fs.readFileSync(routeResult);
-        contentType = getContentType(routeResult);
-    }
+    console.log("Result path: " + routeResult.filePath);
     return {
-        "status": status,
-        "contentType": contentType,
-        "content": content
+        "status": routeResult.status,
+        "contentType": getContentType(routeResult.filePath),
+        "content": fs.readFileSync(routeResult.filePath)
     };
 }
 
