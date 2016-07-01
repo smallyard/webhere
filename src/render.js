@@ -11,16 +11,12 @@ function getResponseInfo(routeResult) {
 }
 
 function getContentType(filePath) {
-    var suffix = "";
+    var suffix = ".*";
     var pointIndex = filePath.lastIndexOf(".");
     if (pointIndex != -1) {
         suffix = filePath.substr(pointIndex);
     }
-    if (contentTypes.hasOwnProperty(suffix)) {
-        return contentTypes[suffix];
-    } else {
-        return contentTypes[".*"];
-    }
+    return contentTypes[suffix];
 }
 
 exports.getResponseInfo = getResponseInfo;
