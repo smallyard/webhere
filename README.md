@@ -29,6 +29,11 @@ $ webhere -p 5000
 $ webhere -p 5000 -b /home
 ```
 
+```shell
+#don't open browser
+$ webhere -s
+```
+
 ## All options
 ```
   Usage: webhere [options]
