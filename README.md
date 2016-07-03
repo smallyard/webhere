@@ -20,7 +20,7 @@ $ webhere
 ```
 
 ```shell
-#create a web server in the current directory with port 5000
+#create a web server with port 5000
 $ webhere -p 5000
 ```
 
@@ -37,6 +37,7 @@ $ webhere -p 5000 -b /home
     -V, --version          output the version number
     -p, --port <n>         port of web (default 9000)
     -b, --basePath <path>  base path of web (default .)
+    -s, --silent           silent mode, don't open browser
 ```
 
 ## Log

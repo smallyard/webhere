@@ -6,7 +6,8 @@ var package = require("../package");
 
 var options = {
     port: 9000,
-    basePath: "."
+    basePath: ".",
+    silent: false
 };
 
 program
@@ -14,6 +15,7 @@ program
     .usage("[options]")
     .option("-p, --port <n>", "port of web (default 9000)")
     .option("-b, --basePath <path>", "base path of web (default .)")
+    .option("-s, --silent", "silent mode, don't open browser")
     .parse(process.argv);
 
 if (program.port) {
@@ -22,6 +24,10 @@ if (program.port) {
 
 if (program.basePath) {
     options.basePath = program.basePath;
+}
+
+if (program.silent) {
+    options.silent = true;
 }
 
 console.log(JSON.stringify(options));
