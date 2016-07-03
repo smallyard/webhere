@@ -36,13 +36,13 @@ $ webhere -s
 
 ## All options
 ```
-  Usage: webhere [options]
-  Options:
-    -h, --help             output usage information
-    -V, --version          output the version number
-    -p, --port <n>         port of web (default 9000)
-    -b, --basePath <path>  base path of web (default .)
-    -s, --silent           silent mode, don't open browser
+Usage: webhere [options]
+Options:
+   -h, --help             output usage information
+   -V, --version          output the version number
+   -p, --port <n>         port of web (default 9000)
+   -b, --basePath <path>  base path of web (default .)
+   -s, --silent           silent mode, don't open browser
 ```
 
 ## Log
