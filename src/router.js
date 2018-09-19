@@ -1,7 +1,9 @@
 var fs = require("fs");
 var path = require("path");
 function route(url, basePath) {
-    url = url.substring(0, url.indexOf("?"));
+    if (url.indexOf("?") > 0) {   
+        url = url.substring(0, url.indexOf("?"));
+    }
     console.log("Origin path: " + url);
     if (url == "/") {
         return {
