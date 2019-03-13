@@ -11,28 +11,28 @@ Create a web server in the current directory.
 ## Install
 
 ```
-$ npm install webhere -g 
+npm i -g webhere
 ```
 
 ## Usage
 ```shell
-#create a web server in the current directory with default port 9000
-$ webhere
+# create a web server in the current directory with default port 9000
+webhere
 ```
 
-```shell
-#create a web server with port 5000
-$ webhere -p 5000
+```bash
+# create a web server with port 5000
+webhere -p 5000
 ```
 
-```shell
-#create a web server in the /home directory with port 5000
-$ webhere -p 5000 -b /home
+```bash
+# create a web server in the /home directory with port 5000
+webhere -p 5000 -b /home
 ```
 
-```shell
-#don't open browser
-$ webhere -s
+```bash
+# don't open browser
+webhere -s
 ```
 
 ## All options

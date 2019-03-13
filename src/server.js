@@ -36,7 +36,6 @@ var openBrowser = function (url) {
     } catch (e) {
         console.log("Can't open browser, cause by: " + e)
     }
-
 };
 
 exports.start = start;

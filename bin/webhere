@@ -6,7 +6,7 @@ var package = require("../package");
 
 var options = {
     port: 9000,
-    basePath: ".",
+    basePath: process.cwd(),
     silent: false
 };
 

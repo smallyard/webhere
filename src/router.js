@@ -5,25 +5,29 @@ function route(url, basePath) {
         url = url.substring(0, url.indexOf("?"));
     }
     console.log("Origin path: " + url);
-    if (url == "/") {
-        return {
-            status: 200,
-            filePath: path.join(__dirname, "./html/index.html")
-        };
-    } else {
-        var filePath = path.join(basePath, url);
-        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+    var filePath = path.join(basePath, url);
+    if (fs.existsSync(filePath)) {
+        if(fs.statSync(filePath).isFile()){
             return {
                 status: 200,
-                filePath: filePath
+                filePath: filePath,
+                directory: false
             };
         } else {
-            return {
-                status: 404,
-                filePath: path.join(__dirname, "./html/404.html")
+               return {
+                status: 200,
+                filePath: path.join(__dirname, "./html/directory.html"),
+                directory: true,
+                basePath: basePath,
+                url: url
             };
         }
+    } else {
+        return {
+            status: 404,
+            filePath: path.join(__dirname, "./html/404.html"),
+            directory: false
+        };
     }
 }
-
 exports.route = route;
